@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .main {
+    @apply flex justify-center items-center min-h-screen shadow-xl;
+  }
+
+  .container {
+    @apply bg-pink-500 p-7 flex justify-around items-center flex-col shadow-lg;
+  }
+
+  .main-label {
+    @apply text-2xl text-white px-3 font-semibold;
+  }
+
+  .main-btn {
+    @apply text-lg bg-pink-500 rounded-lg px-3 py-1 ml-3 text-white font-medium;
+  }
+
+  .ul-container {
+    @apply py-5 list-none;
+  }
+
+  .tasks-list {
+    @apply flex justify-between text-white bg-sky-900 py-1 px-3 rounded-md text-lg my-2;
+  }
+
+  .trash-icon {
+    @apply w-5 h-5 hover:scale-125 transition;
+  }
+}
