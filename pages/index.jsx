@@ -27,24 +27,25 @@ export default function HomePage() {
   return (
     <main className="main">
       <div className="container">
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="taskInput" className="main-label">
-            New todo:
-          </label>
-          <input type="text" id="taskInput" placeholder="New todo" />
-          <button className="main-btn" type="submit">
-            Add todo
-          </button>
-        </form>
-
-        <ul className="ul-container">
+        <h1 className="main-title">Todo List</h1>
+      <ul className="ul-container">
           {tasks.map((task, index) => {
             return (
               <Task key={index} task={task} deleteTask={deleteTask} />
-              
             );
           })}
-        </ul>
+        </ul> 
+        <form className="main-form" onSubmit={handleSubmit}>
+          <label htmlFor="taskInput" className="main-label">
+            New todo:
+          </label>
+          <div>
+          <input className="main-input" type="text" id="taskInput" placeholder="New todo" />
+          <button className="main-btn" type="submit">
+            Add todo
+          </button>
+          </div>
+        </form>
       </div>
     </main>
   );

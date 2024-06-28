@@ -13,6 +13,7 @@ return (
     <ul className="ul-container">
         <li className="tasks-list">
         {title}
+        
         <button onClick={() => deleteTask(id)}>
             <Image
             src={deleteSrc}
@@ -27,6 +28,7 @@ return (
             className="edit-icon" 
             />
         </button>
+        
         {onEdit && 
          <div className="input-edit">
          <input type="text" placeholder={title} />

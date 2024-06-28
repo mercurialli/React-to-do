@@ -4,30 +4,47 @@
 
 @layer utilities {
   .main {
-    @apply flex justify-center items-center min-h-screen shadow-xl;
+    @apply flex flex-col justify-center items-center min-h-screen shadow-xl bg-gradient-to-r from-pink-500 to-cyan-500;
   }
 
   .container {
-    @apply bg-pink-500 p-7 flex justify-around items-center flex-col shadow-lg;
+    @apply bg-pink-300 p-7 flex justify-around items-center flex-col shadow-lg w-3/6;
+  }
+
+  .main-title{
+    @apply font-medium text-white text-4xl mb-10;
+  }
+
+  .main-form {
+    @apply p-7 flex justify-around items-start flex-col mt-12 -mb-10;
   }
 
   .main-label {
-    @apply text-2xl text-white px-3 font-semibold;
+    @apply text-2xl text-white px-3 font-semibold mb-3 ;
+  }
+
+  .main-input {
+    @apply text-center mb-16 px-5 py-1.5 focus:outline-none focus:ring-0 focus:border-pink-900 active:border-pink-100 text-pink-800;
   }
 
   .main-btn {
-    @apply text-lg bg-pink-500 rounded-lg px-3 py-1 ml-3 text-white font-medium;
+    @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-3 py-1 mx-3 text-pink-100 font-medium;
   }
 
   .ul-container {
-    @apply py-5 list-none;
+    @apply py-0 -my-1 list-none;
   }
 
   .tasks-list {
-    @apply flex justify-between text-white bg-sky-900 py-1 px-3 rounded-md text-lg my-2;
+    @apply flex justify-between text-pink-100 bg-pink-500/50 py-1 px-3 text-lg my-2 min-w-96;
   }
 
-  .trash-icon {
-    @apply w-5 h-5 hover:scale-125 transition;
+  .delete-icon{ 
+    @apply w-5 h-5 hover:scale-125 transition ml-80;
   }
+
+  .edit-icon {
+    @apply w-5 h-5 hover:scale-125 transition ml-5 mr-10;
+  }
+
 }
