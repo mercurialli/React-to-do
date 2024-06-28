@@ -15,8 +15,3 @@ export const EditTask = (title) => {
       </>
     );
   };
-
-  //input value={city} onChange={(e)=>setCity(e.target.value)
-//   const handleChange = (evt) => {
-//     setOnEdit(evt.target.value);
-//   };
