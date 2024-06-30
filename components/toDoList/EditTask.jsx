@@ -1,22 +1,22 @@
+import React, {useState} from 'react'
+import { Task } from './Task';
 
-export const EditTask = (title) => {
-    
-    return (
-      <>
-        <div className="input-edit">
-          <input type="text" placeholder={title} onChange={(e)=>e.target.value} />
-          <button onClick={
-            () => {
-                setOnEdit(false)
-            }
-          }
-            >Save</button>
-        </div>
-      </>
-    );
-  };
+// export const EditTask = ({editTask, id, title}) => {
+//     const [value, setValue] = useState(title, id);
+//     const handleSubmit = (e) => {
+//         e.preventDefault();
+//         const inputValue = e.target.taskInputChange.value;
+//         {
+//           const newTask = {    id: id,
+//                             title: inputValue, };
+//           setValue(editTask(id, newTask.title));
+//         }
+//       };
 
-  //input value={city} onChange={(e)=>setCity(e.target.value)
-//   const handleChange = (evt) => {
-//     setOnEdit(evt.target.value);
-//   };
+  return (
+    <form onSubmit={handleSubmit} className="task-form">
+    <input type="text" id = 'taskInputChange' className="todo-input" placeholder={title} />
+    <button type="submit" className='save-btn' onClick={() => setOnEdit(false)}>Save</button>
+  </form>
+  )
+}

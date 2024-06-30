@@ -5,39 +5,56 @@ import editSrc from "./icon-edit.svg";
 import deleteSrc from "./icon-trash.svg";
 
 
-export function Task({task, deleteTask}){
-    const {id, title} = task
+export function Task({task, deleteTask, editTask}){
     const [onEdit, setOnEdit] = useState(false);
-
-return (
+    const {id, title} = task
+    console.log('Task', id, title);
+    return (
     <ul className="ul-container">
         <li className="tasks-list">
         {title}
-        
-        <button onClick={() => deleteTask(id)}>
+        <button className="delete" onClick={() => deleteTask(id)}>
             <Image
             src={deleteSrc}
             alt="delete-icon"
             className="delete-icon"
             />
         </button>
-        <button onClick={() => setOnEdit(true) }>
+        <button className="edit" onClick={() => 
+        { setOnEdit(true) }}>
             <Image 
             src={editSrc} 
             alt="edit-icon" 
             className="edit-icon" 
             />
         </button>
-        
-        {onEdit && 
-         <div className="input-edit">
-         <input type="text" placeholder={title} />
-         <button onClick={() => setOnEdit(false)}>Save</button>
-       </div>
-        }
+        {onEdit && (<EditTask key={id} task={task} editTask={editTask} id={id} title={title} />)}
         </li>
     </ul>
     )
 }
 
-// const currentTask = task.filter((item) => item.id !== id);
+
+
+
+
+
+   // const [onEdit, setOnEdit] = useState(false);
+        {/* {onEdit &&
+        <form onSubmit={(evt) => handleChange(evt)}>
+        <input 
+        className="input-edit"
+        type="text" 
+        key={id} 
+        placeholder={title} 
+        onChange={handleSubmit(evt.target.value)} 
+        />
+        <button onClick={() => {setOnEdit(false)}} >Save</button>
+        </form>} */}
+
+        {/* {onEdit && 
+            <div className="input-edit">
+            <input type="text" placeholder={title} />
+            <button onClick={() => setOnEdit(false)}>Save</button>
+        </div>
+        } */}
