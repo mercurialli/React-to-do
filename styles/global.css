@@ -24,7 +24,7 @@
   }
 
   .main-label {
-    @apply text-2xl text-white px-3 font-semibold mb-3;
+    @apply text-2xl text-white px-3 font-semibold mb-3 mr-64;
   }
 
   .main-input {
@@ -42,6 +42,7 @@
   .edit-btn {
     @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-8 py-1 -ml-28 text-pink-100 font-medium h-9 w-28;
   }
+
 
   .ul-container {
     @apply py-0 -my-1 list-none;

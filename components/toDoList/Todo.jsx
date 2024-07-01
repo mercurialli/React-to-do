@@ -7,7 +7,7 @@ export const Todo = ({ task, deleteTask, editTask }) => {
   const { id, title } = task;
 
   return (
-    <div>
+    <div className="task-container">
       <ul className="ul-container">
         <li className="tasks-list">
           {title}
