@@ -16,7 +16,11 @@
   }
 
   .main-form {
-    @apply p-7 flex justify-around items-start flex-col mt-12 -mb-10;
+    @apply p-7 flex justify-around items-start flex-col mt-12 -mb-10 w-full;
+  }
+
+  .edit-form {
+    @apply p-7 flex justify-around items-start flex-row w-full;
   }
 
   .main-label {
@@ -24,11 +28,15 @@
   }
 
   .main-input {
-    @apply text-center mb-16 px-5 py-1.5 focus:outline-none focus:ring-0 focus:border-pink-900 active:border-pink-100 text-pink-800;
+    @apply text-center mb-16 px-5 py-1.5 focus:outline-none focus:ring-0 focus:border-pink-900 active:border-pink-100 text-pink-800 min-w-80;
   }
 
   .main-btn {
     @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-3 py-1 mx-3 text-pink-100 font-medium;
+  }
+
+  .edit-btn{
+    @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-3 py-1  text-pink-100 font-medium;
   }
 
   .ul-container {
