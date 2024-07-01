@@ -28,11 +28,11 @@
   }
 
   .main-input {
-    @apply text-center mb-16  py-1.5 focus:outline-none focus:ring-0 focus:border-pink-900 active:border-pink-100 text-pink-800 w-72 h-9;
+    @apply text-center mb-16  py-1.5 focus:outline-none focus:ring-0 focus:border-pink-900 active:border-pink-100 text-pink-800 w-72 min-h-9;
   }
 
   .edit-input {
-    @apply text-center mb-16  py-1.5 focus:outline-none focus:ring-0 focus:border-pink-900 active:border-pink-100 text-pink-800 w-72 h-9 mr-5;
+    @apply text-center mb-16  py-1.5 focus:outline-none focus:ring-0 focus:border-pink-900 active:border-pink-100 text-pink-800 w-72 min-h-9 mr-5;
   }
 
   .main-btn {
@@ -44,22 +44,26 @@
   }
 
   .ul-container {
-    @apply py-0 -my-1 list-none;
+    @apply py-0 -my-1 list-none ;
   }
 
   .tasks-list {
-    @apply flex justify-between text-pink-100 bg-pink-500/50 py-1 text-lg my-2 px-5 pl-10 w-96;
+    @apply flex justify-between text-pink-100 bg-pink-500/50 py-1 text-lg my-2 px-3 pl-10 w-96;
+  }
+
+  .task {
+    @apply block truncate hover:line-clamp-6 hover:break-words text-wrap mr-3;
   }
 
   .main-container-button{
-    @apply flex justify-around items-center mr-5;
+    @apply flex justify-around items-center mr-3 ml-3 px-3 min-w-28;
   }
 
   .delete-icon {
-    @apply w-5 h-5 hover:scale-125 transition;
+    @apply w-5 h-5 hover:scale-125 transition ml-5;
   }
 
   .edit-icon {
-    @apply w-5 h-5 hover:scale-125 transition ml-5 ;
+    @apply w-5 h-5 hover:scale-125 transition ml-1;
   }
 }
