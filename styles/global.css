@@ -32,15 +32,15 @@
   }
 
   .edit-input {
-    @apply text-center mb-16  py-1.5 focus:outline-none focus:ring-0 focus:border-pink-900 active:border-pink-100 text-pink-800 w-72 h-9;
+    @apply text-center mb-16  py-1.5 focus:outline-none focus:ring-0 focus:border-pink-900 active:border-pink-100 text-pink-800 w-72 h-9 mr-5;
   }
 
   .main-btn {
-    @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-3 py-1 mx-2.5 text-pink-100 font-medium h-9;
+    @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-3 py-1 mx-3.5 text-pink-100 font-medium h-9 w-28;
   }
 
   .edit-btn {
-    @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-6 py-1 -ml-32 text-pink-100 font-medium h-9;
+    @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-8 py-1 -ml-28 text-pink-100 font-medium h-9 w-28;
   }
 
   .ul-container {
