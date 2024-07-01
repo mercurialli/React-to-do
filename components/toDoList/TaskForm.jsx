@@ -15,7 +15,7 @@ export const TaskForm = ({ addTask }) => {
       <label htmlFor="taskInput" className="main-label">
         New todo:
       </label>
-      <div>
+      <div className="form-container">
         <input
           className="main-input"
           type="text"

@@ -4,7 +4,7 @@
 
 @layer utilities {
   .main {
-    @apply flex flex-col justify-center items-center min-h-screen shadow-xl bg-gradient-to-r from-pink-500 to-cyan-500;
+    @apply flex flex-col justify-center items-center min-h-screen w-full shadow-xl bg-gradient-to-r from-pink-500 to-cyan-500;
   }
 
   .container {
@@ -16,31 +16,35 @@
   }
 
   .main-form {
-    @apply p-7 flex justify-around items-center flex-col mt-12 -mb-10 w-full;
+    @apply p-7 flex justify-around items-center flex-col mt-12 -mb-10;
   }
 
   .edit-form {
-    @apply p-7 flex justify-around items-start flex-row w-full;
+    @apply p-7 flex justify-around items-center flex-row -mb-24;
   }
 
   .main-label {
     @apply text-2xl text-white px-3 font-semibold mb-3 mr-64;
   }
 
+  .form-container{
+    @apply flex justify-around flex-row;
+  }
+
   .main-input {
-    @apply text-center mb-16  py-1.5 focus:outline-none focus:ring-0 focus:border-pink-900 active:border-pink-100 text-pink-800 w-72 min-h-9;
+    @apply text-center mb-16  py-1.5 focus:outline-none focus:ring-0 focus:border-pink-900 active:border-pink-100 text-pink-800 min-w-64 min-h-9;
   }
 
   .edit-input {
-    @apply text-center mb-16  py-1.5 focus:outline-none focus:ring-0 focus:border-pink-900 active:border-pink-100 text-pink-800 w-72 min-h-9 mr-5;
+    @apply text-center mb-16  py-1.5 focus:outline-none focus:ring-0 focus:border-pink-900 active:border-pink-100 text-pink-800 min-w-64 min-h-9;
   }
 
   .main-btn {
-    @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-3 py-1 mx-3.5 text-pink-100 font-medium h-9 w-28;
+    @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-3 py-1 ml-2 text-pink-100 font-medium h-9 min-w-28;
   }
 
   .edit-btn {
-    @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-8 py-1 -ml-28 text-pink-100 font-medium h-9 w-28;
+    @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-8 py-1 ml-2 text-pink-100 font-medium h-9 min-w-28;
   }
 
   .ul-container {
@@ -48,7 +52,7 @@
   }
 
   .tasks-list {
-    @apply flex justify-between text-pink-100 bg-pink-500/50 py-1 text-lg my-2 px-3 pl-10 w-96;
+    @apply flex justify-between text-pink-100 bg-pink-500/50 py-1 text-lg my-3 px-3 pl-10 w-96 ;
   }
 
   .task {
@@ -56,7 +60,7 @@
   }
 
   .main-container-button{
-    @apply flex justify-around items-center mr-3 ml-3 px-3 min-w-28;
+    @apply flex justify-around items-center mr-3 ml-3 px-3 min-w-28 relative;
   }
 
   .delete-icon {

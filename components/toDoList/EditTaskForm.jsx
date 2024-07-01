@@ -8,6 +8,7 @@ export const EditTaskForm = ({ editTitle, task }) => {
   };
   return (
     <form onSubmit={handleSubmit} className="edit-form">
+      <div className="form-container">
       <input
         type="text"
         value={value}
@@ -18,6 +19,7 @@ export const EditTaskForm = ({ editTitle, task }) => {
       <button type="submit" className="edit-btn">
         Save
       </button>
+      </div>
     </form>
   );
 };
