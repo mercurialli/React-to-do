@@ -13,7 +13,7 @@ export const EditTaskForm = ({ editTitle, task }) => {
         type="text"
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        className="main-input"
+        className="edit-input"
         placeholder={task.title}
       />
       <button type="submit" className="edit-btn">

@@ -11,12 +11,14 @@ export const Todo = ({ task, deleteTask, editTask }) => {
       <ul className="ul-container">
         <li className="tasks-list">
           {title}
+          <div className="main-container-button">
           <button className="delete" onClick={() => deleteTask(id)}>
             <Image src={deleteSrc} alt="delete-icon" className="delete-icon" />
           </button>
           <button className="edit" onClick={() => editTask(id)}>
             <Image src={editSrc} alt="edit-icon" className="edit-icon" />
           </button>
+          </div>
         </li>
       </ul>
     </div>
