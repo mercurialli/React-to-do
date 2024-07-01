@@ -11,7 +11,7 @@
     @apply bg-pink-300 p-7 flex justify-around items-center flex-col shadow-lg w-3/6;
   }
 
-  .main-title{
+  .main-title {
     @apply font-medium text-white text-4xl mb-10;
   }
 
@@ -24,7 +24,7 @@
   }
 
   .main-label {
-    @apply text-2xl text-white px-3 font-semibold mb-3 ;
+    @apply text-2xl text-white px-3 font-semibold mb-3;
   }
 
   .main-input {
@@ -35,7 +35,7 @@
     @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-3 py-1 mx-3 text-pink-100 font-medium;
   }
 
-  .edit-btn{
+  .edit-btn {
     @apply text-lg bg-pink-500 hover:bg-pink-600 transition-colors px-3 py-1  text-pink-100 font-medium;
   }
 
@@ -47,12 +47,11 @@
     @apply flex justify-between text-pink-100 bg-pink-500/50 py-1 px-3 text-lg my-2 min-w-96;
   }
 
-  .delete-icon{ 
+  .delete-icon {
     @apply w-5 h-5 hover:scale-125 transition ml-80;
   }
 
   .edit-icon {
     @apply w-5 h-5 hover:scale-125 transition ml-5 mr-10;
   }
-
 }
