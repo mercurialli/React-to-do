@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { Todo } from "./Todo";
 import { TaskForm } from "./TaskForm";
 import { v4 as uniqueId } from "uuid";
@@ -12,7 +12,10 @@ export const TaskLayer = () => {
     setTasks([...tasks, newTask]);
   };
 
-  const deleteTask = (id) => setTasks(tasks.filter((task) => task.id !== id));
+  const deleteTask = useCallback((id) => {
+    const currentTask = tasks.filter((task) => task.id !== id);
+    setTasks(currentTask);
+    }, [tasks]);
 
   const editTask = (id) => {
     setTasks(
