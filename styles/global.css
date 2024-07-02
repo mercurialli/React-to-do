@@ -60,7 +60,7 @@
   }
 
   .main-container-button{
-    @apply flex justify-around items-center mr-3 ml-3 px-3 min-w-28 relative;
+    @apply flex gap-1 justify-around items-center mr-3 ml-3 px-3 min-w-28 relative;
   }
 
   .delete-icon {
@@ -68,6 +68,6 @@
   }
 
   .edit-icon {
-    @apply w-5 h-5 hover:scale-125 transition ml-1;
+    @apply w-5 h-5 hover:scale-125 transition;
   }
 }
